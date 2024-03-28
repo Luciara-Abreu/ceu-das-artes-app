@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { CustomNavbar, ContainerNavbar, ContainerTitle, ContainerLinks, NavEnd } from './styles';
+import { CustomNavbar, ContainerNavbar, ContainerTitle, ContainerLinks, NavEnd, ComponentButton } from './styles';
 
 function NavbarComponent() {
     return (
@@ -12,18 +12,21 @@ function NavbarComponent() {
 
                     <ContainerTitle>
                         <Navbar.Brand className='link' href="#home">CEU DAS ARTES</Navbar.Brand>
-                        <h6>FAZENDO ARTE COM GRAÇA</h6>
+                        <p>FAZENDO ARTE COM GRAÇA</p>
                     </ContainerTitle>
 
                     <ContainerLinks>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link className='link' href="/home">Home</Nav.Link>
-                                <Nav.Link className='link' href="/dashboard">Dashboard</Nav.Link>
-                                <Nav.Link className='link' href="/ranquing">Ranking</Nav.Link>
-                                <Nav.Link className='link' href="/newTourney">Novo Torneio</Nav.Link>
-                                <Nav.Link className='link' href="/">Sair</Nav.Link>
+
+                                <ComponentButton variant="outline-primary" href="/home">HOME</ComponentButton>{' '}
+                                <ComponentButton variant="outline-info">PROJETO</ComponentButton>{' '}
+                                <ComponentButton variant="outline-warning">INFO</ComponentButton>{' '}
+                                <ComponentButton variant="outline-light">INFO</ComponentButton>{' '}
+                                <ComponentButton variant="outline-success">INFO</ComponentButton>{' '}
+                                <ComponentButton variant="outline-danger">BIBLIOTECA</ComponentButton>{' '}
+
 
                                 <NavEnd>
                                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Navbar from 'react-bootstrap/Navbar';
+import {Button, ComponentButtonProps} from 'react-bootstrap/Button';
 
 export const CustomNavbar = styled(Navbar)`
 width: 100%;
@@ -68,3 +69,11 @@ export const NavEnd = styled.div`
 }
 
 `
+
+export const ComponentButton = styled(Button).attrs<ComponentButtonProps>((props) => ({
+  href: props.href ?? '#',
+}))<ComponentButtonProps>`
+  width: 110px; /* Defina a largura desejada para os botões */
+  height: 40px; /* Defina a altura desejada para os botões */
+  margin: 3px; /* Adicione margem entre os botões */
+`;

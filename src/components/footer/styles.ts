@@ -4,9 +4,7 @@ import styled from 'styled-components'
 
 export const ContainerFooter = styled.div`
 width: 100%;
-position: fixed;
 bottom: 0;
-overflow: hidden;
 background: #1d1e22;
 
 h2{
@@ -34,6 +32,7 @@ export const SubContainer = styled.div`
   border: none;
   border-bottom: 1px solid #ccc;
   margin: 50px;
+  padding-top: 10px;
 
 }
 `

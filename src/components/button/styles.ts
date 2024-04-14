@@ -7,10 +7,10 @@ export const ComponentButton = styled.div`
   height: 40px; 
   margin: 3px; 
   display: flex;
-  gap: 10px;
+  gap: 5px;
 
   .btn{
-    min-width: 20%;
+    min-width: 19%;
   }
 `;
 

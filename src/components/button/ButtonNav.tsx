@@ -6,8 +6,8 @@ function ButtonNav() {
   return (
     <ComponentButton>
       <Button className='btn' variant="outline-primary">HOME</Button>{' '}
-      <Button className='btn' variant="outline-info">PROJETO</Button>{' '}
-      <Button className='btn' variant="outline-warning">INFO</Button>{' '}
+      <Button className='btn' variant="outline-warning">PROJETO</Button>{' '}
+      <Button className='btn' variant="outline-info">SOBRE</Button>{' '}
       <Button className='btn' variant="outline-light">INFO</Button>{' '}
       <Button className='btn' variant="outline-success">INFO</Button>{' '}
       <Button className='btn' variant="outline-danger">BIBLIOTECA</Button>{' '}

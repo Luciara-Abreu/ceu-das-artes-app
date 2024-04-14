@@ -3,6 +3,7 @@ import { ChangeEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import bobesponja from '../../assets/bobesponja.gif'
  import ceu from '../../assets/ceu.gif'
+import { Col, Row } from 'react-bootstrap'
 
 
 
@@ -41,8 +42,10 @@ const Login = () => {
   }
 
   return (
-    <S.Container>
+      <Row>
+        <Col xs={6}>
       <S.ContainerLogin>
+                    
         <S.WrapLogin>
           <S.LoginForm>
 
@@ -85,7 +88,9 @@ const Login = () => {
           </S.LoginForm>
         </S.WrapLogin>
       </S.ContainerLogin>
-    </S.Container>
+           </Col>
+       </Row>  
+
   )
 }
 

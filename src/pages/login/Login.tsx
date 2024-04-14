@@ -23,10 +23,6 @@ const Login = () => {
     setPassword(event.target.value)
   }
 
-  const eventData = {
-    email,
-    password,
-  }
 
   // const handleSendAuthenticationAdm = () => {
   //   const messageError = 'E-mail ou senha invalida, Entre com seus dados'
@@ -39,7 +35,7 @@ const Login = () => {
   //   }
   // }
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     //console.log("submit");
   }

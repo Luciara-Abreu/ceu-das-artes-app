@@ -1,5 +1,3 @@
-import Footer from "../../components/footer/Footer";
-
 import { BodyHome, ContainerHome } from "./styles";
 
 

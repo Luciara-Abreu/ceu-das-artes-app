@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Navbar from 'react-bootstrap/Navbar';
-import {Button, ComponentButtonProps} from 'react-bootstrap/Button';
 
 export const CustomNavbar = styled(Navbar)`
 width: 100%;
@@ -29,7 +28,7 @@ width: 100%;
 `
 
 export const ContainerTitle = styled.div`
-width: 100%;
+width: 50%;
 display: flex;
 flex-direction: column;
 align-items: baseline;
@@ -37,6 +36,11 @@ padding-left: 15px;
 
 .link{                     
   color: #fffefe!important;
+  font-size: 30px;
+ }
+ p{
+  color: #ffff;
+  font-size: 13px;
  }
 `
 
@@ -61,19 +65,3 @@ display:flex;
   }
 }
 `
-
-export const NavEnd = styled.div`
-#basic-nav-dropdown{
-  color: #fffefe!important;
-  opacity: 1;
-}
-
-`
-
-export const ComponentButton = styled(Button).attrs<ComponentButtonProps>((props) => ({
-  href: props.href ?? '#',
-}))<ComponentButtonProps>`
-  width: 110px; /* Defina a largura desejada para os botões */
-  height: 40px; /* Defina a altura desejada para os botões */
-  margin: 3px; /* Adicione margem entre os botões */
-`;

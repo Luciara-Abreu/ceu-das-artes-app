@@ -43,7 +43,7 @@ const Login = () => {
 
   return (
       <Row>
-        <Col xs={6}>
+        <Col xs={12}>
       <S.ContainerLogin>
                     
         <S.WrapLogin>

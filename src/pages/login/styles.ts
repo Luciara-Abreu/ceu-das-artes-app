@@ -7,8 +7,7 @@ height: 100vh;
 justify-content: center;
 `
 
-
-const ContainerLogin = styled.div`
+export const ContainerLogin = styled.div`
   width: 100%;
   height: 100vh;
 
@@ -18,31 +17,28 @@ const ContainerLogin = styled.div`
   justify-content: center;
   background: #111;
 `;
-const WrapLogin = styled.div`
-  height: 80vh;
+
+export const WrapLogin = styled.div`
+  width: 35%;
+  height: 90vh;
   background-color: #333;
   border-radius: 10px;
   padding: 0 24px;
-
+  margin: 0 0 0 8px;
   //para não gerar scrow na página
   overflow: hidden;
-  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0, 2);
+
+  @media screen and (max-width: 1008px) {
+    width: 95%;
+  }
+
 
   .text-criarConta {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-
-    @media (max-width: 768px) and (min-width: 481px) {
-      width: 340px;
-      height: auto;
-    }
-    @media (max-width: 480px) and (min-width: 320px) {
-      width: 320px;
-      height: auto;
-    }
-  }
+}
 
   .txt1 {
     font-size: 14px;
@@ -59,26 +55,18 @@ const WrapLogin = styled.div`
   }
 `;
 
-const CriarConta = styled.div`
+export const CriarConta = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
 `;
 
-const LoginForm = styled.div`
+export const LoginForm = styled.div`
   width: 100%;
   //padding-bottom: 1px;
-
-  @media (max-width: 768px) and (min-width: 481px) {
-    width: 340px;
-    //  height: 67vh;
-  }
-  @media (max-width: 480px) and (min-width: 320px) {
-    //   height: 67vh;
-  }
 `;
 
-const LoginFormTitle = styled.div`
+export const LoginFormTitle = styled.div`
   width: 100%;
   font-family: Nunito, sans-serif;
   overflow: hidden;
@@ -107,43 +95,28 @@ const LoginFormTitle = styled.div`
   }
 `;
 
-const DivLogo = styled.div`
+export const DivLogo = styled.div`
   width: 100%;
 
-  @media (max-width: 768px) and (min-width: 481px) {
-    margin-left: 35px;
-    padding-bottom: 20px;
-  }
-  @media (max-width: 480px) and (min-width: 320px) {
-    margin-left: 35px;
-    padding-bottom: 20px;
-  }
 `;
-const LogoForm = styled.div`
+
+export const LogoForm = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 80px;
 
   img {
     width: 40%;
   }
-
-  @media (max-width: 768px) and (min-width: 481px) {
-    width: 10vw;
-    height: 30vh;
-  }
-  @media (max-width: 480px) and (min-width: 320px) {
-    width: 10vw;
-    height: 30vh;
-  }
 `;
-const ContainerInput = styled.div`
+
+export const ContainerInput = styled.div`
   width: 100%;
 `;
 
-const WrapInput = styled.div`
+export const WrapInput = styled.div`
   width: 100%;
   position: relative;
   border-bottom: 2px solid #adadad;
@@ -225,11 +198,11 @@ const WrapInput = styled.div`
   }
 `;
 
-const ContainerLoginFormBtn = styled.div`
+export const ContainerLoginFormBtn = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 19px 0 0 0;
+  margin: 100px 0 0 0;
 
   .login-form-btn {
     width: 100%;
@@ -249,24 +222,5 @@ const ContainerLoginFormBtn = styled.div`
       cursor: pointer;
     }
   }
-
-  @media (max-width: 768px) and (min-width: 481px) {
-    padding: 20px 0 0 0;
-  }
-  @media (max-width: 480px) and (min-width: 320px) {
-    padding: 20px 0 0 0;
-  }
 `;
 
-export {
-  ContainerLogin,
-  WrapLogin,
-  LoginForm,
-  LoginFormTitle,
-  DivLogo,
-  LogoForm,
-  CriarConta,
-  WrapInput,
-  ContainerInput,
-  ContainerLoginFormBtn,
-};

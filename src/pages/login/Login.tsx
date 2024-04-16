@@ -13,7 +13,7 @@ const Login = () => {
 
   const history = useNavigate()
   const handleClick = () => {
-    history('/criarConta')
+    history('/signin')
   }
 
   const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
@@ -70,6 +70,13 @@ const Login = () => {
                   <input className={password !== '' ? 'has-val input' : 'input'} type="password" value={password} onChange={handlePasswordInput} />
                   <span className="FocusInput" data-placeholder="Password"></span>
                 </S.WrapInput>
+
+                <S.CriarConta className="text-criarConta">
+              <div className="txt1">Esqueceu a senha?</div>
+              <button onClick={handleClick} className="txt2">
+                Recuperar senha
+              </button>  
+            </S.CriarConta>
               </S.ContainerInput>
 
               <S.ContainerLoginFormBtn className="actions">
@@ -83,7 +90,7 @@ const Login = () => {
               <div className="txt1">Não possui conta?</div>
               <button onClick={handleClick} className="txt2">
                 Criar Conta
-              </button>
+              </button>  
             </S.CriarConta>
           </S.LoginForm>
         </S.WrapLogin>

@@ -105,7 +105,7 @@ export const LogoForm = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 80px; 
 
   img {
     width: 40%;

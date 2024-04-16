@@ -13,7 +13,7 @@ const Login = () => {
 
   const history = useNavigate()
   const handleClick = () => {
-    history('/signin')
+    history('/signUp')
   }
 
   const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {

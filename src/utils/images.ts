@@ -1,5 +1,6 @@
 import CinemaImg from '../.././src/assets/Cinema.jpg';
 import aulaViolaoImg from '../.././src/assets/aulaViolao.jpg';
+import bannerceudasartesImg from '../.././src/assets/banner_ceu_das_artes.jpg';
 import bobesponjaImg from '../.././src/assets/bobesponja.gif';
 import borboletaImg from '../.././src/assets/borboleta.png';
 import capoeiraCrianasImg from '../.././src/assets/capoeiraCrianças.jpg';
@@ -19,6 +20,7 @@ import youtubeImg from '../.././src/assets/youtube.png';
 const Images = {
   Cinema: CinemaImg,
   aulaViolao: aulaViolaoImg,
+  bannerceudasartes: bannerceudasartesImg,
   bobesponja: bobesponjaImg,
   borboleta: borboletaImg,
   capoeiraCrianas: capoeiraCrianasImg,

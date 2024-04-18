@@ -7,7 +7,7 @@ function ButtonNav() {
     <ComponentButton>
 
      <a href='#home'><Button className='btn' variant="outline-primary">HOME</Button>{' '}</a>
-     <a href='#projeo'><Button className='btn' variant="outline-warning">PROJETO</Button>{' '}</a>
+     <a href='#projeto'><Button className='btn' variant="outline-warning">PROJETO</Button>{' '}</a>
      <a href='#sobre'><Button className='btn' variant="outline-info">SOBRE</Button>{' '}</a>
      <a href='#info'><Button className='btn' variant="outline-light">INFO</Button>{' '}</a>
      <a href='#info2'><Button className='btn' variant="outline-success">INFO</Button>{' '}</a>

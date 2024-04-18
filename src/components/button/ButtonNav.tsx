@@ -1,16 +1,17 @@
-import { ComponentButton, NavEnd} from "./styles";
+import { ComponentButton, NavEnd } from "./styles";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 
 function ButtonNav() {
   return (
     <ComponentButton>
-      <Button className='btn' variant="outline-primary">HOME</Button>{' '}
-      <Button className='btn' variant="outline-warning">PROJETO</Button>{' '}
-      <Button className='btn' variant="outline-info">SOBRE</Button>{' '}
-      <Button className='btn' variant="outline-light">INFO</Button>{' '}
-      <Button className='btn' variant="outline-success">INFO</Button>{' '}
-      <Button className='btn' variant="outline-danger">BIBLIOTECA</Button>{' '}
+
+     <a href='#home'><Button className='btn' variant="outline-primary">HOME</Button>{' '}</a>
+     <a href='#projeo'><Button className='btn' variant="outline-warning">PROJETO</Button>{' '}</a>
+     <a href='#sobre'><Button className='btn' variant="outline-info">SOBRE</Button>{' '}</a>
+     <a href='#info'><Button className='btn' variant="outline-light">INFO</Button>{' '}</a>
+     <a href='#info2'><Button className='btn' variant="outline-success">INFO</Button>{' '}</a>
+     <a href='#libary'><Button className='btn' variant="outline-danger">BIBLIOTECA</Button>{' '}</a>
 
       <NavEnd>
         <NavDropdown title="Login" id="basic-nav-dropdown">

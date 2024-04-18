@@ -4,7 +4,7 @@ import { Container, Figure, Row, Col, Accordion } from "react-bootstrap";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import Masonry from "../../components/grid/Masonry.grid.tsx";
+
 
 const About = () => {
   useEffect(() => {
@@ -98,9 +98,6 @@ const About = () => {
         </StyledAcordion>
           </Col>
 
-          <Col xs lg="7">
-          <Masonry />
-          </Col>
         </Row>
       </Container>
     </PageContainer>

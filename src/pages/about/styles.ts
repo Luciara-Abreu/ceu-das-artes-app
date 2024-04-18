@@ -35,7 +35,6 @@ height: 20vh;
 margin-top: 50px;
 
 `
-
 // Estilizando as imagens
 export const ImagesContainer = styled.div`
   display: flex;

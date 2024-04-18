@@ -1,6 +1,6 @@
 
 import './App.css'
-import ListRoutes from './routes/index'
+import { ListRoutes } from './routes/index'
 
 function App() {
 

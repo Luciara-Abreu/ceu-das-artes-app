@@ -6,7 +6,7 @@ import ButtonNav from '../button/ButtonNav';
 
 function NavbarComponent() {
     return (
-        <ContainerNavbar>
+        <ContainerNavbar fixed="top">
             <CustomNavbar expand="lg" className="bg-body-tertiary">
                 <Container className='container-bootstrap'>
 

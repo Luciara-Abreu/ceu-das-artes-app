@@ -16,6 +16,7 @@ font-size: 18px;
 
 export const ContainerNavbar = styled(Navbar)`
 width: 100%;
+height: 9vh;
 
 
 .bg-body-tertiary{

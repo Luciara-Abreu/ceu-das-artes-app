@@ -7,19 +7,28 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-images": "node generateImages.js"
   },
   "dependencies": {
+    "@react-spring/parallax": "*",
+    "@react-spring/web": "^9.7.3",
+    "aos": "^2.3.4",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "formik": "^2.4.5",
+    "lodash": "^4.17.21",
+    "lodash.shuffle": "^4.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
+    "react-spring": "^9.7.3",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@types/lodash.shuffle": "4.2.7",
+    "@types/aos": "^3.0.7",
     "@types/axios": "^0.14.0",
     "@types/react": "^18.2.73",
     "@types/react-bootstrap": "^0.32.36",

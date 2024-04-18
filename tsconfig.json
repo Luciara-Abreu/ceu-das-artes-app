@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/axios/submit.login.api.js"],
+  "include": ["src", "src/axios/submit.login.api.js", "1.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
